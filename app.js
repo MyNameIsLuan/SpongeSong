@@ -6,7 +6,7 @@ const ytdl = require('ytdl-core');
 const queue = new Map();
 
 var servers = {};
-var prefix = 'b;';
+var prefix = 'b;';h
 client.on("message", async message => {
     var args = message.content.substring(prefix.length).split(" ");
     if (!message.content.startsWith(prefix)) return;
@@ -102,7 +102,7 @@ break;
 		if (serverQueue && serverQueue.playing) {
 			serverQueue.playing = false;
 			serverQueue.connection.dispatcher.pause();
-			return message.channel.send('⏸ c');
+			return message.channel.send('⏸ A música foi parada');
 		}
 		return message.channel.send('Não há nada tocando.');
 break;
@@ -189,4 +189,4 @@ async function handleVideo(video, message, voiceChannel, playlist = false) {
 	serverQueue.textChannel.send(`🎶 Começa a tocar agora: **${song.title}**`)
 }
 });
-client.login(process.env.BattleSong);
+client.login(process.env.SpongeBot);
