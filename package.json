@@ -2,9 +2,9 @@
   "name": "BattleSong",
   "version": "1.0.0",
   "description": "aa",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "author": "ImLuan",
   "license": "MIT",
