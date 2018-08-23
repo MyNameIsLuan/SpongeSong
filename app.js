@@ -6,7 +6,7 @@ const ytdl = require('ytdl-core');
 const queue = new Map();
 
 var servers = {};
-var prefix = 'b;';h
+var prefix = '!';
 client.on("message", async message => {
     var args = message.content.substring(prefix.length).split(" ");
     if (!message.content.startsWith(prefix)) return;
